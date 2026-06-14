@@ -43,7 +43,6 @@ body::before {
     z-index: 0;
     pointer-events: none;
 }
-
 .date {
     font-size: 0.85rem;
     opacity: 0.6;
@@ -54,6 +53,60 @@ body::before {
     column-gap: 30px;
     padding-left: 20px;
     max-width: 600px;
+}
+.skill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: stretch;
+}
+.skill-category {
+    position: relative;
+    flex: 1 1 260px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.skill-category:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+.skill-category h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #2d16a8;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 4px solid #d8b10d;
+    font-size: 2rem;
+}
+.skill-category ul {
+    padding-left: 20px;
+    margin: 0;
+    display: grid;
+    gap: 10px 25px;
+}
+
+.skill-category li {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    transition: transform 0.2s ease;
+    list-style: none;
+    position: relative;
+    padding-left: 16px;
+}
+.skill-category li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2d16a8;
+}
+.skill-category li:hover {
+    transform: translateX(4px);
 }
 p {
     line-height: 1.6;
@@ -115,8 +168,44 @@ a {
     color: var(--complementary-color);
     text-decoration: none;
 }
-
 a:hover {
     color: var(--secondary-color);
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-style: normal;
+}
+tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+.navbar {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #1f2937;
+    padding: 12px;
+}
 
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: #374151;
+}

@@ -9,11 +9,15 @@
 <body>
     <header>
         <h1>Andrew Kosinski's Resume</h1>
-        <h2>Web Developer</h2>
+        <h2><span>Web Developer</span></h2>
         <p>84 East High Street<br> Union City, PA 16438</p>
         <p>Phone: (814) 737-7650</p>
         <p>Email: akosin2@wgu.edu</p>
-
+<nav class="navbar">
+    <a href="resume.html">Resume</a>
+    <a href="cover-letter.html">Cover Letter</a>
+    <a href="career-goals.html">Career Goals</a>
+</nav>
     </header>
 
     <main class="resume">
@@ -30,31 +34,84 @@ high standards for quality, safety, and customer satisfaction. Recognized for de
 hands-on leadership that promotes accountability and team cohesion.
 Seeking a long-term management opportunity offering advancement and stability.</p>
             </article>
-            
         </section>
             <!-- Skills Section is a placeholder for now. I will fill it in with actual content later. I just wanted to get the structure of the resume in place first. -->
         <section id="skills">
-            
-            <h2>Skills</h2>            
-           <ul id="skillslist">   
-                <li>HTML5, CSS3, JavaScript</li>
-                <li>Python, Django, NPM, Node.js</li>
-                <li>Git, GitHub</li> 
+            <h2><span>Skills</span></h2>
+          <div class="skill-wrapper">
+        <div class="skill-category">
+            <h3><span>Technical Skills</span></h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Node.js</li>
+                <li>NPM</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3><span>Hard Skills</span></h3>
+            <ul>
                 <li>Project Management</li>
+                <li>SEO Strategy</li>
+                <li>Digital Marketing</li>
+                <li>Market Research</li>
+                <li>Business Operations</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3><span>Soft Skills</span></h3>
+            <ul>
                 <li>Leadership</li>
                 <li>Communication</li>
                 <li>Problem Solving</li>
                 <li>Adaptability</li>
-                <li>Teamwork</li> 
+                <li>Teamwork</li>
             </ul>
+        </div>
+        </div>
+        </section>  
+        <section id="skillstable">
+            <h2><span>Technical Proficiency Overview</span></h2>
+             <table>
+                <caption>Skill Level Breakdown</caption>
+                 <tr>
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                    <th>Experience (Years)</th>
+                    <th>Usage Frequency</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Advanced</td>
+                    <td>5</td>
+                    <td>Daily</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                    <td>4</td>
+                    <td>Daily</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                    <td>2</td>
+                    <td>Frequent</td>
+                </tr>
+            </table>
         </section>
             <!-- Expereince and Education sections are placeholders for now. I will fill them in with actual content later. I just wanted to get the structure of the resume in place first. -->
         <section id="experience">
             <h2>Experience</h2>
             <article>
                 <header>
-                    <h3>Founder | Technical Marketing Director</h3>
-                    <p>Pulse Analytics Groups LLC<br>DBA SeoPulse</br>Erie, PA</p>
+                    <h3>Founder | <span>Technical Marketing Director</span></h3>
+                    <p>Pulse Analytics Groups LLC<br>DBA SeoPulse<br>Erie, PA</p>
                 </header>
                     <ul>
                         <li>Founded and built Pulse Analytics Group LLC from the ground up, developing a hybrid marketing and technical services company focused on SEO systems, website optimization, and digital growth infrastructure for small and mid-sized businesses.</li>
@@ -67,12 +124,12 @@ Seeking a long-term management opportunity offering advancement and stability.</
                     </ul>
                 <p>As the founder of Pulse Analytics Group LLC, I am actively developing and operating a hybrid marketing and technology-driven business while advancing my skills in software development and web engineering. In this role, I have built and continue to refine SEOPulse.org using HTML, CSS, JavaScript, Python, and XML, integrating frontend design with backend logic to support structured SEO workflows and digital marketing functionality. My work combines hands-on coding with real-world business application, including website optimization, search engine performance strategies, and digital branding systems for business visibility. Alongside technical development, I manage all aspects of business operations such as service design, client acquisition strategy, and market research, allowing me to continuously apply and expand my programming knowledge in a practical environment. This ongoing experience has strengthened my understanding of full-stack development concepts, data structuring, and system design while simultaneously building a functioning marketing organization from the ground up.</p>
                 <p class="date">March 2026 - Present</p>
-                           
+                        
             </article>
             <article>
                 <header>
-                    <h3>President</h3>
-                    <p>Shaffer Foods LLC<br>DBA Eerie Coffee Company</br>Erie, PA</p>
+                    <h3><span>President</span></h3>
+                    <p>Shaffer Foods LLC<br>DBA Eerie Coffee Company<br>Erie, PA</p>
                 </header>
                     <ul>
                         <li>Oversaw all aspects of operations, including finance, sales, marketing, human resources, and production to ensure
@@ -109,8 +166,8 @@ levels
             </article>
             <article>
                 <header>
-                    <h3>Production Lead Supervisor</h3>
-                    <p>Maple Donuts Inc. | Lake City, PA</p>
+                    <h3><span>Production Lead Supervisor</span></h3>
+                    <p>Maple Donuts Inc.<br>Lake City,PA</p>
                 </header>
                     <ul>
                         <li> Supervised daily production operations on multiple lines, ensuring product quality, consistency, and efficiency to meet
@@ -128,8 +185,8 @@ productivity</li>
             </article>
             <article>
                 <header>
-                <h3>Cook / Line Lead</h3>
-                <p>Quaker Steak and Lube | Erie, PA</p>
+                <h3><span>Cook / Line Lead</span></h3>
+                <p>Quaker Steak and Lube<br>Erie,PA</p>
                 </header>
                     <ul>
                         <li>Prepared menu items according to company recipes and standards in a fast-paced kitchen.</li>
