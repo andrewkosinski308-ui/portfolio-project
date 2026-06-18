@@ -54,6 +54,20 @@ body::before {
     z-index: 0;
     pointer-events: none;
 }
+.cover-hero {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cover-hero img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    height: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
 .date {
     font-size: 0.85rem;
     opacity: 0.6;
@@ -72,6 +86,10 @@ header {
     padding: 30px 35px;
     border-bottom: 2px solid var(--secondary-color);
     text-align: center;
+}
+.header-center {
+   text-align: center;
+   flex: 1;
 }
 header p {
     font-size: 0.95rem;
@@ -223,7 +241,6 @@ p {
 section {
      padding: 25px 35px;
 }
-
 table {
     width: 100%;
     border-collapse: collapse;
