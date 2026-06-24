@@ -6,11 +6,12 @@
     --contrast-color: #3d2e7f;
 }
 
-/* 🌊 GLOBAL LIQUID FOUNDATION */
+/* Global styling */
 * {
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #ececec;
@@ -20,23 +21,30 @@ body {
     position: relative;
 }
 
-/* subtle background image overlay */
+/* Background overlay */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-
     background-image: url("../images/pexels-peaky-29445973.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     opacity: 0.06;
     z-index: 0;
     pointer-events: none;
 }
 
-/* PAGE CONTAINER (LIQUID FIX) */
+/* HR */
+hr {
+    border: none;
+    height: 2px;
+    width: 100%;
+    background-color: #F4E39F;
+    margin: 2rem 0;
+}
+
+/* Page container */
 .page-container {
     max-width: 900px;
     width: 100%;
@@ -49,7 +57,7 @@ body::before {
     z-index: 1;
 }
 
-/* HEADER (FIXED + GRADIENT) */
+/* Header */
 header {
     border: 2px solid blue;
     margin-bottom: 0;
@@ -63,9 +71,10 @@ header {
     padding: 30px 35px;
     border-bottom: 2px solid var(--secondary-color);
     text-align: center;
+    font-size: 14px;
 }
 
-/* NAVBAR */
+/* Navbar */
 .navbar {
     position: sticky;
     top: 0;
@@ -101,7 +110,7 @@ header {
     background-color: #3d2e7f;
 }
 
-/* TYPOGRAPHY */
+/* Typography */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 5px;
@@ -123,7 +132,7 @@ p {
     line-height: 1.6;
 }
 
-/* ARTICLES */
+/* Articles */
 article {
     padding: 20px;
     margin-bottom: 25px;
@@ -138,7 +147,7 @@ article:hover {
     box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
 
-/* LINKS */
+/* Links */
 a {
     color: var(--complementary-color);
     text-decoration: none;
@@ -148,7 +157,7 @@ a:hover {
     color: var(--secondary-color);
 }
 
-/* COVER IMAGE */
+/* Hero image */
 .cover-hero img {
     width: 100%;
     max-width: 800px;
@@ -159,20 +168,20 @@ a:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* SECTIONS */
+/* Sections */
 section {
     padding: 25px 35px;
     scroll-margin-top: 90px;
 }
 
-/* FLEX GROUPS */
+/* Flex groups */
 #education, #experience {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* TABLES */
+/* Tables */
 table {
     width: 100%;
     border-collapse: separate;
@@ -194,7 +203,7 @@ tr:nth-child(even) {
     background-color: #f3f4f6;
 }
 
-/* VIDEO */
+/* Video */
 .video-container {
     width: 100%;
     display: flex;
@@ -213,7 +222,8 @@ tr:nth-child(even) {
         inset -3px -3px 6px rgba(255,255,255,0.8),
         4px 4px 12px rgba(0,0,0,0.15);
 }
-/*Audio Player Element */
+
+/* Audio */
 audio {
     width: 100%;
     max-width: 500px;
@@ -221,20 +231,21 @@ audio {
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    outline: none;
 }
 
 .audio-section {
     padding: 20px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.6);
+    gap: 10px;
     border-radius: 10px;
     margin: 20px 0;
 }
 
-/* SKILLS */
+/* Skills */
 .skill-category {
     flex: 1 1 260px;
     background-color: #f5f5f5;
@@ -248,6 +259,7 @@ audio {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.18);
 }
+
 .skills-table tbody tr {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -256,13 +268,13 @@ audio {
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
-/* UTILITIES */
+
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
-/* =========================
-   FORM WRAPPER
-========================= */
+
+/* Form */
 form {
     max-width: 600px;
     margin: 50px auto;
@@ -270,16 +282,9 @@ form {
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    font-family: Arial, sans-serif;
-}
-.form-header {
-    text-align: center;
-    margin-bottom: 20px;
 }
 
-/* =========================
-   LABELS
-========================= */
+/* Labels */
 label {
     display: block;
     margin-bottom: 6px;
@@ -287,9 +292,7 @@ label {
     color: #1f2937;
 }
 
-/* =========================
-   INPUT FIELDS
-========================= */
+/* Inputs */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -305,7 +308,7 @@ select {
     outline: none;
 }
 
-/* Focus effect */
+/* Focus */
 input:focus,
 textarea:focus,
 select:focus {
@@ -313,104 +316,18 @@ select:focus {
     box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
 }
 
-/* =========================
-   TEXTAREA
-========================= */
+/* Textarea */
 textarea {
     resize: vertical;
     min-height: 120px;
 }
 
-/* =========================
-   RADIO BUTTON GROUP
-========================= */
-p {
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #1f2937;
-}
-
+/* Radio */
 input[type="radio"] {
     margin-right: 6px;
     margin-left: 10px;
 }
 
-/* =========================
-   SELECT DROPDOWN
-========================= */
-select {
-    cursor: pointer;
-}
-
-/* =========================
-   SUBMIT BUTTON
-========================= */
-button[type="submit"] {
-    width: 100%;
-    padding: 14px;
-    background: #1976D2;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-
-/* Hover effect */
-button[type="submit"]:hover {
-    background: #0f5bb5;
-    transform: translateY(-1px);
-}
-
-/* Active click effect */
-button[type="submit"]:active {
-    transform: translateY(0px);
-}
-
-/* =========================
-   SPACING HELPERS
-========================= */
-br {
-    display: none;
-}
-
-/* Focus effect */
-input:focus,
-textarea:focus,
-select:focus {
-    border-color: #1976D2;
-    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
-}
-
-/* =========================
-   TEXTAREA
-========================= */
-textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-/* =========================
-   RADIO BUTTON GROUP
-========================= */
-p {
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #1f2937;
-}
-
-input[type="radio"] {
-    margin-right: 6px;
-    margin-left: 10px;
-}
-.radio-group input[type="radio"],
-.radio-group label {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 4px 6px 4px 0;
-}
 .radio-option {
     display: flex;
     align-items: center;
@@ -418,16 +335,12 @@ input[type="radio"] {
     margin: 6px 0;
 }
 
-/* =========================
-   SELECT DROPDOWN
-========================= */
+/* Select */
 select {
     cursor: pointer;
 }
 
-/* =========================
-   SUBMIT BUTTON
-========================= */
+/* Submit button */
 button[type="submit"] {
     width: 100%;
     padding: 14px;
@@ -441,31 +354,22 @@ button[type="submit"] {
     transition: all 0.2s ease-in-out;
 }
 
-/* Hover effect */
 button[type="submit"]:hover {
     background: #0f5bb5;
     transform: translateY(-1px);
 }
 
-/* Active click effect */
 button[type="submit"]:active {
     transform: translateY(0px);
 }
 
-/* =========================
-   SPACING HELPERS
-========================= */
-br {
-    display: none;
-}
-
-
+/* Footer */
 .site-footer {
     margin-top: 40px;
     padding: 20px;
     text-align: center;
     background-color: #2C12A1;
     border-top: 1px solid #e5e7eb;
-    font-size: 13px;
+    font-size: 14px;
     color: #6b7280;
 }
