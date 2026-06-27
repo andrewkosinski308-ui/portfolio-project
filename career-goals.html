@@ -18,25 +18,32 @@
         </div>
     </header>
     <nav class="navbar">
-    <ul class="nav-links">
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="resume.html#professionalsummary">Summary</a></li>
-        <li><a href="resume.html#skills">Skills</a></li>
-        <li><a href="resume.html#experience">Experience</a></li>
-        <li><a href="resume.html#education">Education</a></li>
-        <li><a href="cover-letter.html">Cover Letter</a></li>
-        <li><a href="career-goals.html">Career Goals</a></li>
-        <li><a href="form.html">Contact Me</a></li>
-    </ul>
-</nav>
+        <ul class="nav-links">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="resume.html#professionalsummary">Summary</a></li>
+            <li><a href="resume.html#skills">Skills</a></li>
+            <li><a href="resume.html#experience">Experience</a></li>
+            <li><a href="resume.html#education">Education</a></li>
+            <li><a href="cover-letter.html">Cover Letter</a></li>
+            <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+    </nav>
+        <section class="audio-section">
+            <h3>Background Audio</h3>
+                <audio controls loop>
+                    <source src="audio/openmindaudio-vlog-soft-background-music-silver-thread-short-preview-497598.mp3" type="audio/mpeg">
+                </audio>
+        </section>
     <main class="page-container">
         <section class="cover-hero">
-                <img src="images\pexels-jakubzerdzicki-36496927.jpg" alt="Professional workspace image">
+            <h3>Professional workspace image</h3>
+                <img src="images/pexels-jakubzerdzicki-36496927.jpg" alt="Professional workspace image">
             </section>
             <hr>
         <section>
+             <h2>Career Goals</h2>
             <article>
-                <h2>Career Goals</h2>
+                <h3>Professional Development Goals</h3>
 
                     <p>Here are my professional career goals.</p>
                     
@@ -58,22 +65,98 @@
 
             <div class="video-container">
                 <video controls>
-                    <source src="video/Web Developer Career Video.mp4" type="video/mp4">
+                    <source src="video/Web-Developer-Career-Video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
 
             <p class="video-source">Video source: CareerOneStop. (2020, March 5). Career overview [Video].Local file version used for educational purposes.</p>
+        </section>
     </main> 
-    <section class="resources">
-        <h2>Resources</h2>
+        <div class="form-header">
+                <h2>Employer Inquiry Form</h2>
+                <p>Please provide your details so I can follow up regarding potential opportunities or collaboration.</p>
+            </div>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
 
-            <ul>
-                <li>CareerOneStop. (2020, March 5). <em>Career overview</em> [Video]. YouTube.https://youtu.be/FfxTkIsaTYk</li>
-                <li>Zerdzicki, J. (2026, March 9). Pexels-jakubzerdzicki-36496927 [Photograph]. Pexels. https://www.pexels.com/@jakubzerdzicki/</li>
+                <!-- First Name -->
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <br><br>
 
-   </ul>
-    </section>
+                    <!-- Last Name -->
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <br><br>
+
+                <!-- Company Name -->
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name">
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <!-- Phone -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                <br><br>
+
+                <!-- Best Contact Time (Radio Buttons) -->                
+                <div class="radio-group">
+
+                    <p>Best Contact Time:</p>
+
+                    <div class="radio-option">
+                        <input type="radio" id="am" name="contact-time" value="a.m." required>
+                        <label for="am">a.m.</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="pm" name="contact-time" value="p.m.">
+                        <label for="pm">p.m.</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="anytime" name="contact-time" value="anytime">
+                        <label for="anytime">anytime</label>
+                    </div>
+
+                </div>
+                <br><br>
+
+                <!-- Preferred Contact Method (Select List) -->
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact-method">
+                    <option value="phone">phone</option>
+                    <option value="email">email</option>
+                    <option value="text">text</option>
+                </select>
+
+                <br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+
+            </form>
+        <section class="resources">
+            <h2>Resources</h2>
+
+                <ul>
+                    <li>CareerOneStop. (2020, March 5). <em>Career overview</em> [Video]. YouTube.https://youtu.be/FfxTkIsaTYk</li>
+                    <li>Zerdzicki, J. (2026, March 9). Pexels-jakubzerdzicki-36496927 [Photograph]. Pexels. https://www.pexels.com/@jakubzerdzicki/</li>
+
+                </ul>
+        </section>
+        
     <footer class="site-footer">
         <p>&copy; 2026 Andrew Kosinski. All rights reserved.</p>
     </footer>
